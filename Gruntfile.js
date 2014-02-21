@@ -5,9 +5,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     jasmine: {
 	    pivotal: {
-	      src: 'src/FooLib.js',
+	      src: 'src/NodeMaker.js',
 	      options: {
-	        specs: 'spec/FooLibSpec.js'
+	        specs: 'spec/NodeMakerSpec.js'
 	      }
 	    }
 	  }
