@@ -7,7 +7,8 @@ module.exports = function(grunt) {
 	    pivotal: {
 	      src: 'src/NodeMaker.js',
 	      options: {
-	        specs: 'spec/NodeMakerSpec.js'
+	        specs: 'spec/NodeMakerSpec.js',
+            helpers: 'spec/Helper.js'
 	      }
 	    }
 	  }
