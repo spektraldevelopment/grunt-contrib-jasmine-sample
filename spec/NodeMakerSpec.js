@@ -1,6 +1,6 @@
 describe("NodeMaker: ", function() {
 
-    var nodeMaker, nodeContainer, page;
+    var nodeMaker, nodeContainer, newDiv;
 
     beforeEach(function() {
         nodeContainer = document.createElement("div");
@@ -17,7 +17,12 @@ describe("NodeMaker: ", function() {
         expect(nodeContainer).toBeDefined();
     });
 
-    it("phantom is defined.", function() {
-        expect(phantom).toBeDefined();
+    it("creates a div.", function() {
+        newDiv = nodeMaker.createNode("div", nodeContainer, "newDiv");
+        expect(newDiv).toBeDefined();
+    });
+
+    it("newDiv has an id of \"newDiv\".", function() {
+        expect(newDiv.id).toMatch("newDiv");
     });
 });

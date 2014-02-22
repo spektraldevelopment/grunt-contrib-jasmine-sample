@@ -2,11 +2,16 @@ function NodeMaker(ID) {
 
     this.id = ID;
 
-	this.createDiv = function() {
+	this.createNode = function(nodeType, container, id) {
 
-    }
+        container = container || document.body;
+        id = id || false;
+        var node = document.createElement(nodeType);
+        if (id !== false) {
+            node.id = id;
+        }
+        container.appendChild(node);
 
-    this.createImg = function() {
-
+        return node;
     }
 }
