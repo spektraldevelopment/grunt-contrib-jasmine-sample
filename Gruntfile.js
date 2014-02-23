@@ -14,11 +14,9 @@ module.exports = function(grunt) {
                 }
             }
         },
-        watch: {
-            pivotal : {
-                files: ['src/*.js', 'specs/*.js'],
-                tasks: 'jasmine:pivotal:build'
-            }
+        watch : {
+            files : ['**/*.js'],
+            tasks : ['jasmine']
         }
     });
 
@@ -27,5 +25,4 @@ module.exports = function(grunt) {
 
     //Load the plugin that provides the "watch" task
     grunt.loadNpmTasks('grunt-contrib-watch');
-
 };

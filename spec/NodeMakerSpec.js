@@ -25,4 +25,9 @@ describe("NodeMaker: ", function() {
     it("newDiv has an id of \"newDiv\".", function() {
         expect(newDiv.id).toMatch("newDiv");
     });
+
+    it("foo.", function() {
+        var foo = "foobar";
+        expect(foo).toMatch("foobar");
+    });
 });

@@ -14,4 +14,16 @@ function NodeMaker(ID) {
 
         return node;
     }
+
+    this.deleteNode = function(element) {
+        try {
+            element.remove();
+        } catch (err) {
+            element.parentNode.removeChild(element);
+        }
+    }
+
+    this.foobar = function() {
+
+    }
 }
